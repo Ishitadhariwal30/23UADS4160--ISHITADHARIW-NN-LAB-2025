@@ -1,74 +1,40 @@
- Objective
-Implement a multi-layer perceptron (MLP) network with one hidden layer using NumPy in Python to learn the XOR Boolean function. The implementation uses a step activation function and does not include backpropagation.
- 
+
+Objective
+This document outlines the implementation of a multi-layer perceptron (MLP) network with one hidden layer using NumPy in Python to learn the XOR Boolean function. The model employs a step activation function and operates without backpropagation.
 Description
-This code demonstrates a manually configured MLP capable of solving the XOR problem. The XOR function is not linearly separable and requires at least one hidden layer in a neural network. The MLP has:
-· Two input neurons
-· One hidden layer with two neurons
-· One output neuron
- 
-The network uses a step activation function and manually chosen weights and biases, demonstrating that even without backpropagation, an MLP can solve XOR with appropriate configuration.
- 
- Key Points
-· Uses NumPy for matrix operations.
-· Step activation function (binary output).
-· XOR dataset with inputs: [0,0], [0,1], [1,0], and [1,1].
-· Manually selected weights and biases for correct XOR classification.
-· No backpropagation; forward pass only.
- 
+The implementation demonstrates a manually configured MLP capable of solving the XOR problem, which is not linearly separable and requires at least one hidden layer in a neural network.
+MLP Architecture
+Input Layer: 2 neurons
+Hidden Layer: 1 hidden layer with 2 neurons
+Output Layer: 1 neuron
+Key Characteristics
+Activation Function: Step function (binary output)
+Weights & Biases: Manually selected for correct XOR classification
+Learning Approach: Forward pass only (No backpropagation)
+Key Points
+Utilizes NumPy for efficient matrix operations.
+Employs a step activation function for binary outputs.
+Works on the XOR datasetwith the following inputs:
+[0,0], [0,1], [1,0], [1,1]
+Achieves accurate classification of XOR through manually selected weights and biases.
+Conducts only a forward pass, with no backpropagation involved.
 Output
 XOR Function Results:
 Input: [0 0], Predicted Output: 0, Expected Output: 0
 Input: [0 1], Predicted Output: 1, Expected Output: 1
 Input: [1 0], Predicted Output: 1, Expected Output: 1
 Input: [1 1], Predicted Output: 0, Expected Output: 0
- 
+Accuracy:
 Accuracy on XOR dataset: 100.0%
- 
- 
-PERFORMACE
-· Achieves 100% accuracy on the XOR dataset
-· The model is computationally efficient due to simple matrix operations and a small network size.
-· No training time since weights are manually assigned.
- 
- My Comments
-· The manual selection of weights and biases highlights how specific configurations can solve non-linear problems like XOR without backpropagation.
-· This approach is useful for understanding MLP architecture but lacks scalability for larger datasets or more complex functions.
-· Future improvements could include adding backpropagation for learning weights dynamically and exploring different activation functions for broader applications.
- Objective
-Implement a multi-layer perceptron (MLP) network with one hidden layer using NumPy in Python to learn the XOR Boolean function. The implementation uses a step activation function and does not include backpropagation.
- 
-Description
-This code demonstrates a manually configured MLP capable of solving the XOR problem. The XOR function is not linearly separable and requires at least one hidden layer in a neural network. The MLP has:
-· Two input neurons
-· One hidden layer with two neurons
-· One output neuron
- 
-The network uses a step activation function and manually chosen weights and biases, demonstrating that even without backpropagation, an MLP can solve XOR with appropriate configuration.
- 
- Key Points
-· Uses NumPy for matrix operations.
-· Step activation function (binary output).
-· XOR dataset with inputs: [0,0], [0,1], [1,0], and [1,1].
-· Manually selected weights and biases for correct XOR classification.
-· No backpropagation; forward pass only.
- 
-Output
-XOR Function Results:
-Input: [0 0], Predicted Output: 0, Expected Output: 0
-Input: [0 1], Predicted Output: 1, Expected Output: 1
-Input: [1 0], Predicted Output: 1, Expected Output: 1
-Input: [1 1], Predicted Output: 0, Expected Output: 0
- 
-Accuracy on XOR dataset: 100.0%
- 
- 
-PERFORMACE
-· Achieves 100% accuracy on the XOR dataset
-· The model is computationally efficient due to simple matrix operations and a small network size.
-· No training time since weights are manually assigned.
- 
- My Comments
-· The manual selection of weights and biases highlights how specific configurations can solve non-linear problems like XOR without backpropagation.
-· This approach is useful for understanding MLP architecture but lacks scalability for larger datasets or more complex functions.
-· Future improvements could include adding backpropagation for learning weights dynamically and exploring different activation functions for broader applications.
+Performance
+Accuracy: Achieves 100% accuracy on the XOR dataset.
+Efficiency:
+Optimized for computational efficiency with simple matrix operations and a compact network structure.
+Training Time:
+Zero training time due to manual assignment of weights.
+My Comments
+The manual selection of weights and biases underscores how specific configurations can solve non-linear problems like XOR without backpropagation.
+Although this approach is ideal for understanding MLP architecture, it has certain limitations:
+Scalability issues for larger datasets.
+Inability to handle more complex functions effectively.
+

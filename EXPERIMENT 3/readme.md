@@ -56,18 +56,17 @@ The **MNIST dataset** consists of 70,000 grayscale images of handwritten digits 
 
 ### **Sample Output after Training:**
 ```
-Epoch 1/10, Loss: 1.5284, Test Accuracy: 0.8792
-Epoch 2/10, Loss: 0.7526, Test Accuracy: 0.9043
-Epoch 3/10, Loss: 0.5894, Test Accuracy: 0.9165
-Epoch 4/10, Loss: 0.4958, Test Accuracy: 0.9247
-Epoch 5/10, Loss: 0.4379, Test Accuracy: 0.9310
-Epoch 6/10, Loss: 0.3965, Test Accuracy: 0.9352
-Epoch 7/10, Loss: 0.3638, Test Accuracy: 0.9386
-Epoch 8/10, Loss: 0.3391, Test Accuracy: 0.9411
-Epoch 9/10, Loss: 0.3182, Test Accuracy: 0.9435
-Epoch 10/10, Loss: 0.3008, Test Accuracy: 0.9453
-
-Final Test Accuracy: 0.9453
+Epoch 11/20, Loss: 0.2484, Test Accuracy: 0.9410
+Epoch 12/20, Loss: 0.2421, Test Accuracy: 0.9439
+Epoch 13/20, Loss: 0.2367, Test Accuracy: 0.9456
+Epoch 14/20, Loss: 0.2320, Test Accuracy: 0.9469
+Epoch 15/20, Loss: 0.2276, Test Accuracy: 0.9491
+Epoch 16/20, Loss: 0.2237, Test Accuracy: 0.9504
+Epoch 17/20, Loss: 0.2198, Test Accuracy: 0.9522
+Epoch 18/20, Loss: 0.2161, Test Accuracy: 0.9536
+Epoch 19/20, Loss: 0.2129, Test Accuracy: 0.9550
+Epoch 20/20, Loss: 0.2104, Test Accuracy: 0.9564
+Final Test Accuracy: 0.9564
 
 
 ```

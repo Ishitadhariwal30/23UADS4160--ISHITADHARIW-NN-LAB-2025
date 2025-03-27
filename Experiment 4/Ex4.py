@@ -19,7 +19,7 @@ y_test = tf.one_hot(y_test, depth=10)
 hidden_layer_configs = [(160, 100), (100, 100), (100, 160), (60, 60), (100, 60)]
 learning_rates = [0.01, 0.1, 1]
 num_epochs = 20
-batch_size = 100
+batch_size = 10
 n_input = 784
 n_output = 10
 

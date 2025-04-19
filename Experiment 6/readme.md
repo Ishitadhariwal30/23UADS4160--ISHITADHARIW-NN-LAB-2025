@@ -42,33 +42,6 @@ class RNNModel(nn.Module):
 * Mean Absolute Error (MAE) is used to assess model precision.
 * A custom-defined accuracy metric calculates the percentage of predictions within 5% of true values.
   
-## Python Implementation
-
-```
-
-import torch
-import torch.nn as nn
-import torch.optim as optim
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import mean_absolute_error
-
-# Create synthetic time series (sine wave)
-time_steps = 1000
-t = np.linspace(0, 100, time_steps)
-data = np.sin(t)
-
-# Normalize the data (between 0 and 1)
-scaler = MinMaxScaler(feature_range=(-1, 1))
-data_scaled = scaler.fit_transform(data.reshape(-1, 1))
-
-# Convert to PyTorch tensors
-data_scaled = torch.FloatTensor(data_scaled).view(-1)
-
-# Split data into training and test sets
-train_size = int(len(data_scaled) * 0.8)
-train_data, test_data = data_scaled[:train_size], data_scaled[train_size:]
 
 # Create Dataset class for Time Series Data
 class TimeSeriesDataset(torch.utils.data.Dataset):
